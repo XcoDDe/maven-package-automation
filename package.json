@@ -3,11 +3,11 @@
   "displayName": "mvn-package-auto",
   "description": "Automatically runs the package command, if the project is saved and deploys the maven application",
   "version": "1.0.0",
-  "engines": {
+   "engines": {
     "vscode": "^1.79.0"
   },
   "publisher": "thompson-oretan",
-  "categories": [
+   "categories": [
     "Other"
   ],
   "activationEvents": [
@@ -44,6 +44,5 @@
     "eslint": "^8.41.0",
     "glob": "^8.1.0",
     "mocha": "^10.2.0"
-  },
-  "v1": "1.0.0"
-}
+  }
+ }
