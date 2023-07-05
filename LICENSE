@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2023 XcoDDe
+Copyright (c) 2023 Thompson Oretan
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -8,6 +8,17 @@ in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
+
+## Attribution
+
+If you use this software in your projects, we kindly request that you provide attribution to the original author(s) by including the following notice:
+
+"This project utilizes the [maven-package-automation](https://github.com/XcoDDe/maven-package-automation) extension, created by Thompson Oretan."
+
+You can place this notice in the documentation, about page, or any appropriate location within your project.
+
+Thank you for respecting the work and contribution of the original author(s).
+
 
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
