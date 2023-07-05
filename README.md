@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # maven-package-automation README
 
 Automatically package and deploy Maven projects to a Tomcat server when the project is saved in Visual Studio Code.
@@ -15,7 +14,7 @@ This extension is automatically activated when the Visual Studio Code workspace 
 
 ## Known Issues
 
-- None at the moment. Please report any issues or bugs on the [GitHub repository](https://github.com/XcoDDe/maven-package-automation).
+- None at the moment. Please report any issues or bugs on the [GitHub repository](https://github.com/XcoDDe/maven-package-automation/issues).
 
 
 ## Features
@@ -88,8 +87,4 @@ Thank you for respecting the work and contribution of the original author(s).
 
 
  **Enjoy!**
-=======
-# maven-package-automation
-automatically run the mvn package command whenever maven project is saved
->>>>>>> 1833fb1e157628a48994bdc1115a1251cf2a49ca
   
