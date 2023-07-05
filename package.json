@@ -10,30 +10,25 @@
   "categories": [
     "Other"
   ],
- 
   "activationEvents": [
     "onStartupFinished"
   ],
-
   "main": "./extension.js",
-  
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
     "test": "node ./test/runTest.js",
     "vscode:prepublish": "npm run build",
-    "package":"vsce package",
-    "build":"npm run build"
+    "package": "vsce package",
+    "build": "echo No build step required for JavaScript-based extension"
   },
   "devDependencies": {
     "@types/vscode": "^1.79.0",
     "@types/glob": "^8.1.0",
     "@types/mocha": "^10.0.1",
-    "@types/node": "20.2.5",
+    "@vscode/test-electron": "^2.3.2",
     "eslint": "^8.41.0",
     "glob": "^8.1.0",
-    "mocha": "^10.2.0",
-    "typescript": "^5.1.3",
-    "@vscode/test-electron": "^2.3.2"
+    "mocha": "^10.2.0"
   }
 }
