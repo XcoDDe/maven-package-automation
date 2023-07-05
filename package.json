@@ -19,6 +19,15 @@
     "url": "https://github.com/XcoDDe/maven-package-automation"
   },
   "icon": "icon/icon.png",
+  "keywords": [
+    "maven",
+    "java",
+    "maven-automation",
+    "java maven",
+    "maven for java",
+    "maven depencies",
+    "gradle"
+  ],
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",

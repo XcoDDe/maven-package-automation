@@ -19,8 +19,8 @@ function activate(context) {
           vscode.window.showInformationMessage('pom.xml file exists in the project.');
           executeMavenCommand("package");
         } else {
-          vscode.window.showInformationMessage('pom.xml file does not exist in the project.');
-        }
+          return null;
+         }
       });
     } else {
       return null;
