@@ -1,4 +1,4 @@
-# maven-package-automation README
+# maven-package-auto README
 
 Automatically package and deploy Maven projects to a Tomcat server when the project is saved in Visual Studio Code.
 
