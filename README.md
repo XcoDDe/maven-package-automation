@@ -27,7 +27,7 @@ ensuring smooth deployment and server synchronization.
 
 - Status Messages: Receive informative status messages in Visual Studio Code's notification area, indicating whether the `pom.xml` file exists. If the file doesn't exist, no notification is shown. If it does exist, it displays the message "pom.xml file exists in the project."
 
-- Enable/Disable Automatic Package: You can now enable or disable the automatic mvn-package command feature using the toggle button in the status bar. When enabled, the extension will automatically package and deploy your Maven project on save.
+- ON/OF mvn-package command: You can now ON or OF the automatic mvn-package command feature using the mvn-package toggle button in the status bar. When switted ON, the extension will automatically package and deploy your Maven project on save.
 
 ## Requirements
 
