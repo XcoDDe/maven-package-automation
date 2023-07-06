@@ -2,7 +2,7 @@
   "name": "mvn-package-auto",
   "displayName": "mvn-package-auto",
   "description": "Automatically runs the package command, if the project is saved and deploys the maven application",
-  "version": "1.0.0",
+  "version": "1.1.0",
    "engines": {
     "vscode": "^1.79.0"
   },
@@ -13,6 +13,18 @@
   "activationEvents": [
     "onStartupFinished"
   ],
+  "contributes": {
+    "configuration":{
+      "title": "object",
+      "properties": {
+        "mavenPackageAuto.enable":{
+          "type":"boolean",
+          "default":true,
+          "description": "Enable or disable automatic package and deployment on save"
+        }
+      }
+    }
+  },
   "main": "./extension.js",
   "repository": {
     "type": "git",
@@ -42,7 +54,18 @@
     "deployment automation",
     "continuous integration",
     "CI/CD",
-    "gradle"
+    "gradle",
+    "Tomcat deployment",
+    "Visual Studio Code extension",
+    "Java development",
+    "automated build process",
+    "software development",
+    "code productivity",
+    "development workflow",
+    "Eclipse-like Maven automation",
+    "Eclipse compatibility",
+    "Eclipse integration",
+    "Eclipse-like workflow"
   ],
   "scripts": {
     "lint": "eslint .",
