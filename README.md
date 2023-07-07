@@ -29,6 +29,11 @@ ensuring smooth deployment and server synchronization.
 
 - ON/OF mvn-package command: You can now ON or OF the automatic mvn-package command feature using the mvn-package toggle button in the status bar. When switted ON, the extension will automatically package and deploy your Maven project on save.
 
+### Automatic Save and Package
+
+Save all files in the project automatically when a file is saved. This ensures that all changes are captured before executing the Maven package command. No need to manually save each file separately.
+
+
 ## Requirements
 
 Before using the Maven Package Automation tool, ensure that the following requirements are met:
@@ -38,19 +43,24 @@ Before using the Maven Package Automation tool, ensure that the following requir
 3. Tomcat Server: To automatically package and deploy your project to a Tomcat server, ensure that the Tomcat server is up and running. You should have a configured Tomcat server on your machine.
 4. Community Server Connector: Install the latest version of the "Community Server Connector" extension in Visual Studio Code. This extension allows seamless integration with Tomcat servers and facilitates deploying your application's WAR file.
 
-Note: The Maven Package Automation tool has been tested using the Community Server Connector with a Tomcat server.
+Note: The Maven Package Automation tool has been tested using the Community Server Connector with the verison 10.1.10 Tomcat server, it may work for other versions of Tomcat server.
 
 Make sure to fulfill these requirements to ensure the smooth operation of the Maven Package Automation tool.
 
 ## Release Notes
 
-### 1.0.0
+### [1.0.0] - 2023-07-06
 - Initial release of Maven Package Automation tool.
 - Automatically runs the `mvn package` command when the project is saved.
 - Provides seamless integration with Maven projects in Visual Studio Code.
 
-### 1.1.0
+### 1.1.0 - 2023-07-06
 - Added feature to enable/disable mvn-package command.
+
+### 1.1.1 - 2023-07-07
+-Fixed the disturbing prompt `pom.xml file exists in the project.` developers experience every time maven project is saved
+
+-Save all files in the project automatically when a file is saved. This ensures that all changes are captured before executing the Maven package command. No need to manually save each file separately.
 
 ## Contributing
 

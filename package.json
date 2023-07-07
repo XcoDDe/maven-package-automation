@@ -2,7 +2,7 @@
   "name": "mvn-package-auto",
   "displayName": "mvn-package-auto",
   "description": "Automatically runs the package command, if the project is saved and deploys the maven application",
-  "version": "1.1.0",
+  "version": "1.1.1",
    "engines": {
     "vscode": "^1.79.0"
   },
