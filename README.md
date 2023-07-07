@@ -54,10 +54,10 @@ Make sure to fulfill these requirements to ensure the smooth operation of the Ma
 - Automatically runs the `mvn package` command when the project is saved.
 - Provides seamless integration with Maven projects in Visual Studio Code.
 
-### 1.1.0 - 2023-07-06
+### [1.1.0] - 2023-07-06
 - Added feature to enable/disable mvn-package command.
 
-### 1.1.1 - 2023-07-07
+### [1.1.1] - 2023-07-07
 -Fixed the disturbing prompt `pom.xml file exists in the project.` developers experience every time maven project is saved
 
 -Save all files in the project automatically when a file is saved. This ensures that all changes are captured before executing the Maven package command. No need to manually save each file separately.
