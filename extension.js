@@ -26,7 +26,12 @@ function activate(context) {
                 pomXmlChecked = true;
               }
               if (pomXmlChecked) {
-                executeMavenCommand("package");
+                const customArgs = vscode.workspace.getConfiguration().get('maven.executable.options');
+                let commandPackage =  'packcage';
+                if (customArgs && customArgs.length > 0) {
+                  commandPackage = commandPackage.concat(' ').concat(customArgs);
+                }
+                executeMavenCommand(commandPackage);
               }
             } else {
               return null;
