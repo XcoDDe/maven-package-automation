@@ -54,7 +54,6 @@ function activate(context) {
           
          //runs the command when ever the .vscode\settings.json is changed
          vscode.workspace.onDidChangeConfiguration(() => {
-              isConfigurationChanged = true;
               let commandPackage = 'package';
               let customArgs = vscode.workspace.getConfiguration().get('mavenPackageAuto.maven.executable.options');
               commandPackage = commandPackage.concat(' ').concat(customArgs);
