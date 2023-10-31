@@ -1,0 +1,99 @@
+{
+  "name": "mvn-package-auto",
+  "displayName": "mvn-package-auto",
+  "description": "Automate the packaging process for Maven projects within Visual Studio Code.",
+  "version": "1.1.2",
+   "engines": {
+    "vscode": "^1.83.1"
+  },
+  "publisher": "thompson-oretan",
+   "categories": [
+    "Programming Languages",
+    "Debuggers",
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished",
+    "onDidChangeConfiguration"
+  ],
+  "contributes": {
+    "commands": [],
+
+    "configuration":{
+      "title": "object",
+      "properties": {
+        "mavenPackageAuto.enable":{
+          "type":"boolean",
+          "default":true,
+          "description": "Enable or disable automatic package and deployment on save"
+        },
+
+        "mavenPackageAuto.maven.executable.options": {
+          "type": "string",
+          "default": ""
+        }
+      }
+    }
+   
+  },
+  
+  "main": "./extension.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/XcoDDe/maven-package-automation"
+  },
+  "icon": "icon/icon.png",
+  "keywords": [
+    "maven",
+    "java",
+    "maven automation",
+    "java maven",
+    "maven dependencies",
+    "maven packaging",
+    "maven project",
+    "maven build",
+    "maven deploy",
+    "maven automation tool",
+    "maven tasks",
+    "maven integration",
+    "maven workflow",
+    "maven development",
+    "maven extension",
+    "maven productivity",
+    "maven plugin",
+    "maven project management",
+    "build automation",
+    "deployment automation",
+    "continuous integration",
+    "CI/CD",
+    "gradle",
+    "Tomcat deployment",
+    "Visual Studio Code extension",
+    "Java development",
+    "automated build process",
+    "software development",
+    "code productivity",
+    "development workflow",
+    "Eclipse-like Maven automation",
+    "Eclipse compatibility",
+    "Eclipse integration",
+    "Eclipse-like workflow"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js",
+    "vscode:prepublish": "npm run build",
+    "package": "vsce package",
+    "build": "echo No build step required for JavaScript-based extension"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.79.0",
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@vscode/test-electron": "^2.3.2",
+    "eslint": "^8.41.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0"
+  }
+ }
