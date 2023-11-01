@@ -7,6 +7,7 @@ Automate the packaging process for Maven projects within Visual Studio Code.
 This extension contributes the following settings:
 
 - `mavenPackageAuto.enable`: Enable/disable this extension.
+- `mavenPackageAuto.maven.executable.options`: specify you own build of your maven project, by adding your options.
 
 ## Features
 
@@ -16,11 +17,21 @@ The Maven Package Automation extension currently provides the following features
 - **Automatic Save and Package**: Automatically save all files in the project when a file is saved, capturing changes before executing the Maven package command.
 - **Status Messages**: Receive informative status messages in Visual Studio Code's notification area, indicating the presence of the `pom.xml` file.
 
+## Usage
+
+To configure the Maven Package Automation extension, follow these steps:
+
+1. Open the `settings.json` file in maven project in Visual Studio Code. if you can't find it then just create it with the name setting.json
+2. Find the `mavenPackageAuto.maven.executable.options` setting, if its not there then you can just add it.
+3. Add Maven arguments separated by spaces to specify the build process, such as "clean validate package" or any other desired commands.
+4. Now its all set-up, the extension can now automate your maven project build, when its saved
+
+
 ### Upcoming Features
 
 In the upcoming release, we plan to introduce the following feature:
 
-- **Hot Reload (Upcoming)**: Enable automatic reloading of changes in the local application without the need for manual redeployment.
+- **Hot Reload (Upcoming)**: Enable automatic reloading of changes in the local application without the need for manual redeployment to a tomcat server, just like live server.
 
 ## Requirements
 

@@ -41,10 +41,9 @@ function activate(context) {
             if(!savedFilePath.endsWith(configSettingsPath))
             {
               vscode.workspace.saveAll().then(() => {
-                let commandPackage = 'package';
+                
                 let customArgs = vscode.workspace.getConfiguration().get('mavenPackageAuto.maven.executable.options');
-                commandPackage = commandPackage.concat(' ').concat(customArgs);
-                executeMavenCommand(commandPackage);
+                executeMavenCommand(customArgs);
                 // Check if there is a workspace folder
               });
             
@@ -54,10 +53,9 @@ function activate(context) {
           
          //runs the command when ever the .vscode\settings.json is changed
          vscode.workspace.onDidChangeConfiguration(() => {
-              let commandPackage = 'package';
+              
               let customArgs = vscode.workspace.getConfiguration().get('mavenPackageAuto.maven.executable.options');
-              commandPackage = commandPackage.concat(' ').concat(customArgs);
-              executeMavenCommand(commandPackage);
+              executeMavenCommand(customArgs);
       
           });
         }
