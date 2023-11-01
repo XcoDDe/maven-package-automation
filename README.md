@@ -25,6 +25,7 @@ To configure the Maven Package Automation extension, follow these steps:
 2. Find the `mavenPackageAuto.maven.executable.options` setting, if its not there then you can just add it.
 3. Add Maven arguments separated by spaces to specify the build process, such as "clean validate package" or any other desired commands.
 4. Now its all set-up, the extension can now automate your maven project build, when its saved
+5. You can check out the image guide, to help you, if you didnt configure it successfully.[image guide](images/options%20added.png) , [image guide2](images/whenprojectissaved.png)
 
 
 ### Upcoming Features
